@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import MissionsTable from './components/MissionsTable';
+import MissionsTable from '../components/MissionsTable';
 import { fetchMissions } from '../redux/missions/missions';
 
 let join = false;

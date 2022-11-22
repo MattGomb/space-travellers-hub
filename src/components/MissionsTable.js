@@ -7,10 +7,15 @@ const MissionsTable = (props) => {
 
   return (
     <>
-      { missions.map((mission) => <MissionCard key={mission.id} mission={mission} />)}
+      {missions.map((mission) => (
+        <MissionCard
+          key={mission.id}
+          mission={mission}
+        />
+      ))}
     </>
   );
-}
+};
 
 MissionsTable.defaultProps = {
   missions: [],

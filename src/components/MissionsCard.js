@@ -6,7 +6,7 @@ import { reserveMission } from '../redux/missions/missions';
 const MissionCard = (props) => {
   const { mission } = props;
   const {
-    id, name, description, reserved, 
+    reserved, id, name, description,
   } = mission;
 
   const dispatch = useDispatch();
@@ -37,14 +37,14 @@ const MissionCard = (props) => {
   );
 };
 
-Mission.defaultProps = {
+MissionCard.defaultProps = {
   mission: {},
   id: '',
   name: '',
   description: '',
 };
 
-Mission.propTypes = {
+MissionCard.propTypes = {
   mission: PropTypes.instanceOf(Object),
   id: PropTypes.string,
   name: PropTypes.string,
