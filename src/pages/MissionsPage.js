@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import MissionsTable from '../components/MissionsTable';
 import { fetchMissions } from '../redux/missions/missions';
+import '../styles/MissionsPage.css';
 
 let join = false;
 
@@ -22,15 +23,15 @@ const MissionsDisplay = () => {
 
   return (
     <section>
-      <table>
-        <thead>
+      <table className="mission-table-container">
+        <thead className="table-header">
           <tr className="title-row">
             <th>Mission</th>
             <th>Description</th>
             <th>Status</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="table-body">
           <MissionsTable missions={missions} />
         </tbody>
       </table>
