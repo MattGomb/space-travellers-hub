@@ -1,17 +1,24 @@
 import React, { useEffect } from 'react';
-/* import { useSelector, useDispatch } from 'react-redux';
-import { fetchMissions } from '../redux/missions/missions'; */
-import Mission from '../components/Missions';
+import { useDispatch, useSelector } from 'react-redux';
+import MissionsTable from './components/MissionsTable';
+import { fetchMissions } from '../redux/missions/missions';
 
-const Missions = () => {
+let join = false;
+
+const MissionsDisplay = () => {
   // useselector
+  const missions = useSelector((state) => state.missions);
 
   // dispatch
+  const dispatch = useDispatch();
 
   // useeffect
   useEffect(() => {
-
-  }, []);
+    if (join === false) {
+      join = true;
+      dispatch(fetchMissions());
+    }
+  }, [dispatch]);
 
   return (
     <section>
@@ -24,13 +31,11 @@ const Missions = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <Mission />
-          </tr>
+          <MissionsTable missions={missions} />
         </tbody>
       </table>
     </section>
   );
 };
 
-export default Missions;
+export default MissionsDisplay;
