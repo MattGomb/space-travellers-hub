@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mission-table-container {
+  margin: 1rem 2rem;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.title-row {
+  border-bottom: 2px solid #ccc;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  gap: 0;
+}
+
+.title-row th {
+  text-align: left;
+}
+
+.mission-name {
+  font-weight: bold;
+}
