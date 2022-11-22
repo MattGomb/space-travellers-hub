@@ -32,8 +32,9 @@ const missionSlice = createSlice({
     }),
   },
   extraReducers: (builder) => {
-    builder.addCase(fetchMissions.fulfilled, (state, action) => action.payload);
+    builder.addDefaultCase(fetchMissions.fulfilled, (state, action) => action.payload);
   },
 });
 
+export const { reserveMission } = missionSlice.actions;
 export default missionSlice.reducer;
