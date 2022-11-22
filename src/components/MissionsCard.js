@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { reserveMission } from '../redux/missions/missions';
+import '../styles/MissionsPage.css';
 
 const MissionCard = (props) => {
   const { mission } = props;
@@ -26,7 +27,7 @@ const MissionCard = (props) => {
           <span className="badge-passive">NOT A MEMBER</span>
         )}
       </td>
-      <td className="mission-btn">
+      <td className="mission-button">
         {reserved ? (
           <button type="button" className={`mission-btn ${reserved ? 'badge-join' : 'badge-quit'}`} id={id} onClick={toggleJoin}>Join Mission</button>
         ) : (
