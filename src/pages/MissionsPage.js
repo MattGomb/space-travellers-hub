@@ -1,4 +1,7 @@
 import React, { useEffect } from 'react';
+/* import { useSelector, useDispatch } from 'react-redux';
+import { fetchMissions } from '../redux/missions/missions'; */
+import Mission from '../components/Missions';
 
 const Missions = () => {
   // useselector
@@ -12,16 +15,20 @@ const Missions = () => {
 
   return (
     <section>
-      <thead>
-        <tr className="title-row">
-          <th>Mission</th>
-          <th>Description</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <h2>Table of mission elements come here</h2>
-      </tbody>
+      <table>
+        <thead>
+          <tr className="title-row">
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <Mission />
+          </tr>
+        </tbody>
+      </table>
     </section>
   );
 };
