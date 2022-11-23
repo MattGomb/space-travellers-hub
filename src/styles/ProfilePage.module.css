@@ -19,7 +19,8 @@
   width: 100%;
 }
 
-.missionSelected {
+.missionSelected,
+.rocketSelected {
   padding: 0.5rem;
   border: 1px solid #ccc;
 }
