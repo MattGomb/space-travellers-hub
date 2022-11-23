@@ -1,23 +1,26 @@
 import React from 'react';
+import '../styles/ProfilePage.css';
 
 const MyProfile = () => {
-  const ReservedRocketsList = () => {
-    <h1>Reserved Rockets List palceholder</h1>;
+  const JoinedMissionsList = () => {
+    <h1>My Missions</h1>;
   };
 
-  const JoinedMissionsList = () => {
-    <h1>List of joined missions palceholder</h1>;
+  const ReservedRocketsList = () => {
+    <h1>My Rockets</h1>;
   };
 
   return (
     <section className="profile">
       <div className="profile-container">
-        <div className="reserved-rocket">
-          <table>{ReservedRocketsList}</table>
-        </div>
-        <div className="reserved-mission">
-          <table>{JoinedMissionsList}</table>
-        </div>
+        <table className="reserved-missions">
+          <h1>My Mission</h1>
+          <JoinedMissionsList />
+        </table>
+        <table className="reserved-rockets">
+          <h1>My Rockets</h1>
+          <ReservedRocketsList />
+        </table>
       </div>
     </section>
   );
