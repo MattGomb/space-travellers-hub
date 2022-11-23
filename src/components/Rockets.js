@@ -23,7 +23,7 @@ const Rocket = (props) => {
         </div>
         <button type="submit" className={`${rocket.reserved && style.reserved} ${!rocket.reserved && style.notReserved}`} onClick={() => dispatch(rocketReserve(rocket.rocket_id))}>
           {rocket.reserved && 'Cancel Reservation'}
-          {!rocket.reserved && 'Reserver Rocket'}
+          {!rocket.reserved && 'Reserve Rocket'}
 
         </button>
       </div>
