@@ -4,46 +4,50 @@
   box-sizing: border-box;
 }
 
-.mission-table-container {
+.missionTableContainer {
   margin: 1rem 2rem;
   border: 1px solid #ccc;
   border-collapse: collapse;
 }
 
-.title-row {
+.titleRow {
   border-bottom: 2px solid #ccc;
 }
 
-th,
-td {
+.headTM,
+.headTD,
+.headTS,
+.missionName,
+.missionDesc,
+.missionStatus,
+.missionButton {
   padding: 0.5rem;
   border: 1px solid #ccc;
-  gap: 0;
 }
 
-.title-row th {
+.titleRow th {
   text-align: left;
 }
 
-.mission-card:nth-child(odd) {
+.missionCard:nth-child(odd) {
   background-color: #eee;
 }
 
-.mission-name {
+.missionName {
   font-weight: bold;
 }
 
-.mission-button {
+.missionButton {
   padding: 0.5rem 1rem;
   text-align: center;
 }
 
-.mission-status,
-.mission-button {
+.missionStatus,
+.missionButton {
   min-width: 10rem;
 }
 
-.mission-btn {
+.missionBtn {
   padding: 0.5rem;
   background: transparent;
   border: 1px solid #000;
@@ -51,31 +55,31 @@ td {
   cursor: pointer;
 }
 
-.mission-btn:hover {
+.missionBtn:hover {
   box-shadow: 2px 1px 2px 1px #666;
   transform: translateY(-1px);
 }
 
-.mission-btn:active {
+.missionBtn:active {
   transform: translateY(1px);
   box-shadow: 2px 1px 5px 1px #666;
 }
 
-.badge-active {
+.badgeActive {
   background-color: #09b;
   padding: 0.125rem 0.25rem;
   border-radius: 4px;
   color: #fff;
 }
 
-.badge-passive {
+.badgePassive {
   background-color: #777;
   color: #fff;
   padding: 0.125rem 0.25rem;
   border-radius: 4px;
 }
 
-.badge-quit {
+.badgeQuit {
   color: orangered;
   border-color: orangered;
 }
