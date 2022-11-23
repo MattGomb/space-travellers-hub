@@ -38,11 +38,11 @@ const MyProfile = () => {
   return (
     <section className={style.profile}>
       <div className={style.profileContainer}>
-        <div className={style.reservedMissions}>
+        <div className={`${style.reservedMissions} ${style.column}`}>
           <h2>My Mission</h2>
           <JoinedMissionsList />
         </div>
-        <div className={style.reservedRockets}>
+        <div className={`${style.reservedRockets} ${style.column}`}>
           <h2>My Rockets</h2>
           <ReservedRocketsList />
         </div>

@@ -8,6 +8,7 @@
   display: flex;
   gap: 2rem;
   padding: 1rem 2rem;
+  width: 100%;
 }
 
 .reservedMTable,
@@ -15,9 +16,14 @@
   margin: 1rem 0;
   border: 1px solid #ccc;
   border-collapse: collapse;
+  width: 100%;
 }
 
 .missionSelected {
   padding: 0.5rem;
   border: 1px solid #ccc;
+}
+
+.column {
+  width: 50%;
 }

@@ -20,12 +20,32 @@
 .navLinks {
   display: flex;
   align-items: center;
-  gap: 1rem;
   list-style: none;
   text-decoration: none;
+  
+}
+
+.navLinks li:nth-child(3) {
+  border-left: 2px solid grey;
 }
 
 .links {
   text-decoration: none;
-  color: black;
+  color: dodgerblue;
+  padding: 0 1rem;
+}
+
+.links:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.links:focus {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.links:active {
+  text-decoration: underline;
 }
