@@ -21,17 +21,19 @@ const MissionCard = (props) => {
       <td className="mission-name">{name}</td>
       <td className="mission-desc">{description}</td>
       <td className="mission-status">
-        {reserved ? (
+        {reserved && (
           <span className="badge-active">Active Member</span>
-        ) : (
+        )}
+        {!reserved && (
           <span className="badge-passive">NOT A MEMBER</span>
         )}
       </td>
       <td className="mission-button">
-        {reserved ? (
-          <button type="button" className={`mission-btn ${reserved ? 'badge-quit' : 'badge-join'}`} id={`j${id}`} onClick={toggleJoin}>Leave Mission</button>
-        ) : (
-          <button type="button" className={`mission-btn ${reserved ? 'badge-quit' : 'badge-join'}`} id={`l${id}`} onClick={toggleJoin}>Join Mission</button>
+        {reserved && (
+          <button type="button" className={`mission-btn ${reserved && 'badge-quit'} ${!reserved && 'badge-join'}`} id={`j${id}`} onClick={toggleJoin}>Leave Mission</button>
+        )}
+        {!reserved && (
+          <button type="button" className={`mission-btn ${reserved && 'badge-quit'} ${!reserved && 'badge-join'}`} id={`l${id}`} onClick={toggleJoin}>Join Mission</button>
         )}
       </td>
     </tr>
