@@ -14,12 +14,24 @@ const MyProfile = () => {
     <section className="profile">
       <div className="profile-container">
         <table className="reserved-missions">
-          <h1>My Mission</h1>
-          <JoinedMissionsList />
+          <thead>
+            <tr>
+              <th>My Mission</th>
+            </tr>
+          </thead>
+          <tbody>
+            <JoinedMissionsList />
+          </tbody>
         </table>
         <table className="reserved-rockets">
-          <h1>My Rockets</h1>
-          <ReservedRocketsList />
+          <thead>
+            <tr>
+              <th>My Rockets</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ReservedRocketsList />
+          </tbody>
         </table>
       </div>
     </section>
