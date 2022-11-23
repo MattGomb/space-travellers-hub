@@ -7,7 +7,7 @@ import '../styles/MissionsPage.css';
 const MissionCard = (props) => {
   const { mission } = props;
   const {
-    reserved, id, name, description,
+    id, name, description, reserved,
   } = mission;
 
   const dispatch = useDispatch();
@@ -29,9 +29,9 @@ const MissionCard = (props) => {
       </td>
       <td className="mission-button">
         {reserved ? (
-          <button type="button" className={`mission-btn ${reserved ? 'badge-join' : 'badge-quit'}`} id={id} onClick={toggleJoin}>Join Mission</button>
+          <button type="button" className={`mission-btn ${reserved ? 'badge-quit' : 'badge-join'}`} id={`j${id}`} onClick={toggleJoin}>Leave Mission</button>
         ) : (
-          <button type="button" className={`mission-btn ${reserved ? 'badge-quit' : 'badge-join'}`} id={id} onClick={toggleJoin}>Leave Mission</button>
+          <button type="button" className={`mission-btn ${reserved ? 'badge-quit' : 'badge-join'}`} id={`l${id}`} onClick={toggleJoin}>Join Mission</button>
         )}
       </td>
     </tr>

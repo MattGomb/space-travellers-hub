@@ -25,6 +25,10 @@ td {
   text-align: left;
 }
 
+.mission-card:nth-child(odd) {
+  background-color: #eee;
+}
+
 .mission-name {
   font-weight: bold;
 }
@@ -49,6 +53,7 @@ td {
 
 .mission-btn:hover {
   box-shadow: 2px 1px 2px 1px #666;
+  transform: translateY(-1px);
 }
 
 .mission-btn:active {
@@ -56,9 +61,21 @@ td {
   box-shadow: 2px 1px 5px 1px #666;
 }
 
+.badge-active {
+  background-color: #09b;
+  padding: 0.125rem 0.25rem;
+  border-radius: 4px;
+  color: #fff;
+}
+
 .badge-passive {
   background-color: #777;
   color: #fff;
-  padding: 0.25rem;
+  padding: 0.125rem 0.25rem;
   border-radius: 4px;
+}
+
+.badge-quit {
+  color: orangered;
+  border-color: orangered;
 }
