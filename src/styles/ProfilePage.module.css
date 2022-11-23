@@ -27,3 +27,21 @@
 .column {
   width: 50%;
 }
+
+.columnB {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.noMissions,
+.noRockets {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  background-color: red;
+  border-radius: 1rem;
+  width: fit-content;
+}
