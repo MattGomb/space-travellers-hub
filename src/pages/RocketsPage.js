@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchRockets } from '../redux/rockets/rockets';
 import Rocket from '../components/Rockets';
-import '../styles/Rockets.css';
+import style from '../styles/Rockets.module.css';
 
 const Rockets = () => {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ const Rockets = () => {
 
   return (
     <section>
-      <div className="rocket-container">
+      <div className={style.rocketContainer}>
         {rocketsData.map((rocketData) => (
           <Rocket key={rocketData.id} rocket={rocketData} />
         ))}

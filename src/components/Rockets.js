@@ -1,26 +1,30 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { rocketReserve } from '../redux/rockets/rockets';
+import style from '../styles/Rockets.module.css';
 
 const Rocket = (props) => {
   const dispatch = useDispatch();
   const { rocket } = props;
   return (
-    <div className="card flex">
-      <div className="flickr">
+    <div className={`${style.card} ${style.flex}`}>
+      <div className={style.flickr}>
         <img src={rocket.flickr_images[0]} alt={rocket.rocket_name} />
       </div>
 
-      <div className="content">
+      <div className={style.content}>
         <div>
-          <span className="rocket-name">{rocket.rocket_name}</span>
+          <span className={style.rocketName}>{rocket.rocket_name}</span>
         </div>
-        <div className="description">
-          {rocket.reserved ? <span className="badge">Reserved</span> : ''}
+        <div className={style.description}>
+          {rocket.reserved && <span className={style.badge}>Reserved</span>}
+          {!rocket.reserved && ''}
           <span>{rocket.description}</span>
         </div>
-        <button type="submit" className={rocket.reserved ? 'reserved' : 'not-reserved'} onClick={() => dispatch(rocketReserve(rocket.rocket_id))}>
-          {rocket.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
+        <button type="submit" className={`${rocket.reserved && style.reserved} ${!rocket.reserved && style.notReserved}`} onClick={() => dispatch(rocketReserve(rocket.rocket_id))}>
+          {rocket.reserved && 'Cancel Reservation'}
+          {!rocket.reserved && 'Reserver Rocket'}
+
         </button>
       </div>
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { reserveMission } from '../redux/missions/missions';
-import '../styles/MissionsPage.css';
+import style from '../styles/Missions.module.css';
 
 const MissionCard = (props) => {
   const { mission } = props;
@@ -17,21 +17,23 @@ const MissionCard = (props) => {
   };
 
   return (
-    <tr className="mission-card">
-      <td className="mission-name">{name}</td>
-      <td className="mission-desc">{description}</td>
-      <td className="mission-status">
-        {reserved ? (
-          <span className="badge-active">Active Member</span>
-        ) : (
-          <span className="badge-passive">NOT A MEMBER</span>
+    <tr className={style.missionCard}>
+      <td className={style.missionName}>{name}</td>
+      <td className={style.missionDesc}>{description}</td>
+      <td className={style.missionStatus}>
+        {reserved && (
+          <span className={style.badgeActive}>Active Member</span>
+        )}
+        {!reserved && (
+          <span className={style.badgePassive}>NOT A MEMBER</span>
         )}
       </td>
-      <td className="mission-button">
-        {reserved ? (
-          <button type="button" className={`mission-btn ${reserved ? 'badge-quit' : 'badge-join'}`} id={`j${id}`} onClick={toggleJoin}>Leave Mission</button>
-        ) : (
-          <button type="button" className={`mission-btn ${reserved ? 'badge-quit' : 'badge-join'}`} id={`l${id}`} onClick={toggleJoin}>Join Mission</button>
+      <td className={style.missionButton}>
+        {reserved && (
+          <button type="button" className={`${style.missionBtn} ${reserved && style.badgeQuit} ${!reserved && style.badgeJoin}`} id={`j${id}`} onClick={toggleJoin}>Leave Mission</button>
+        )}
+        {!reserved && (
+          <button type="button" className={`${style.missionBtn} ${reserved && style.badgeQuit} ${!reserved && style.badgeJoin}`} id={`l${id}`} onClick={toggleJoin}>Join Mission</button>
         )}
       </td>
     </tr>

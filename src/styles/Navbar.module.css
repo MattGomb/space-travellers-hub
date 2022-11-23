@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid black;
+}
+
+.logoHolder {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navLinks li:nth-child(3) {
+  border-left: 2px solid grey;
+}
+
+.links {
+  text-decoration: none;
+  color: dodgerblue;
+  padding: 0 1rem;
+}
+
+.links:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.links:focus {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.links:active {
+  text-decoration: underline;
+}

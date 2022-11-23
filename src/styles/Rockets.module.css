@@ -19,7 +19,7 @@
   width: 60%;
 }
 
-.rocket-name {
+.rocketName {
   font-size: 25px;
   line-height: 40px;
 }
@@ -50,7 +50,7 @@ button {
   border-radius: 5px;
 }
 
-.not-reserved {
+.notReserved {
   padding: 10px;
   background-color: dodgerblue;
   border: 1px solid #fff;
