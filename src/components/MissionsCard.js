@@ -20,7 +20,7 @@ const MissionCard = (props) => {
     <tr className={style.missionCard}>
       <td className={style.missionName}>{name}</td>
       <td className={style.missionDesc}>{description}</td>
-      <td className={style.missionStatus} data-testid="status">
+      <td className={style.missionStatus}>
         {reserved && (
           <span className={style.badgeActive}>Active Member</span>
         )}
@@ -30,10 +30,10 @@ const MissionCard = (props) => {
       </td>
       <td className={style.missionButton}>
         {reserved && (
-          <button type="button" className={`${style.missionBtn} ${reserved && style.badgeQuit} ${!reserved && style.badgeJoin}`} id={`j${id}`} onClick={toggleJoin} data-testid="leave">Leave Mission</button>
+          <button type="button" className={`${style.missionBtn} ${reserved && style.badgeQuit} ${!reserved && style.badgeJoin}`} id={`j${id}`} onClick={toggleJoin}>Leave Mission</button>
         )}
         {!reserved && (
-          <button type="button" className={`${style.missionBtn} ${reserved && style.badgeQuit} ${!reserved && style.badgeJoin}`} id={`l${id}`} onClick={toggleJoin} data-testid="join">Join Mission</button>
+          <button type="button" className={`${style.missionBtn} ${reserved && style.badgeQuit} ${!reserved && style.badgeJoin}`} id={`l${id}`} onClick={toggleJoin}>Join Mission</button>
         )}
       </td>
     </tr>
