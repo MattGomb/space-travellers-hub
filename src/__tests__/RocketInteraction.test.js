@@ -7,6 +7,7 @@ import store from '../redux/configureStore';
 import Rocket from '../components/Rockets';
 
 describe('mission page', () => {
+  beforeEach(async () => {
     render(
       <Provider store={store}>
         <Router>
@@ -14,6 +15,7 @@ describe('mission page', () => {
         </Router>
       </Provider>,
     );
+  });
 
   it('should update mission member status', () => {
     const button = screen.getByTestId('button');

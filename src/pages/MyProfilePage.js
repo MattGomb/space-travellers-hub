@@ -31,8 +31,8 @@ const MyProfile = () => {
       <table className={style.reservedRTable}>
         <tbody>
           {reservedRockets.map((rocket) => (
-            <tr key={rocket.rocket_id}>
-              <td className={style.rocketSelected}>{rocket.rocket_name}</td>
+            <tr key={rocket.id}>
+              <td className={style.rocketSelected}>{rocket.name}</td>
             </tr>
           ))}
         </tbody>
