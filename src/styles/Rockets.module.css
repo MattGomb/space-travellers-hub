@@ -57,3 +57,16 @@ button {
   color: #fff;
   border-radius: 4px;
 }
+
+.notReserved:hover,
+.reserved:hover {
+  box-shadow: 2px 1px 2px 1px #666;
+  transform: translateY(-1px);
+  border-color: dodgerblue;
+}
+
+.notReserved:active,
+.reserved:active {
+  transform: translateY(1px);
+  box-shadow: 2px 1px 5px 1px #666;
+}
