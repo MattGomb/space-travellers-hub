@@ -1,18 +1,19 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import store from '../redux/configureStore';
 import { BrowserRouter as Router } from 'react-router-dom';
-import MissionDisplay from '../pages/MissionsPage';
 import { render } from '@testing-library/react';
+import store from '../redux/configureStore';
+import MissionDisplay from '../pages/MissionsPage';
 
-describe('the MissionCard snapshot and react testing library', () => {
-    it('renders correctly', () => {
-      const tree = render(<Provider store={store}>
+describe('the MissionDisplay snapshot and react testing library', () => {
+  it('renders correctly', () => {
+    const tree = render(
+      <Provider store={store}>
         <Router>
           <MissionDisplay />
         </Router>
-      </Provider>,);
-      expect(tree).toMatchSnapshot();
-    });
+      </Provider>,
+    );
+    expect(tree).toMatchSnapshot();
   });
-  
+});

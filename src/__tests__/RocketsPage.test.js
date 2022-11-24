@@ -1,18 +1,19 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import store from '../redux/configureStore';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Rockets from '../pages/RocketsPage';
 import { render } from '@testing-library/react';
+import store from '../redux/configureStore';
+import Rockets from '../pages/RocketsPage';
 
-describe('the MissionCard snapshot and react testing library', () => {
-    it('renders correctly', () => {
-      const tree = render(<Provider store={store}>
+describe('the RocketsPage snapshot and react testing library', () => {
+  it('renders correctly', () => {
+    const tree = render(
+      <Provider store={store}>
         <Router>
           <Rockets />
         </Router>
-      </Provider>,);
-      expect(tree).toMatchSnapshot();
-    });
+      </Provider>,
+    );
+    expect(tree).toMatchSnapshot();
   });
-  
+});

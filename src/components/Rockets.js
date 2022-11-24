@@ -16,12 +16,12 @@ const Rocket = (props) => {
         <div>
           <span className={style.rocketName}>{rocket.rocket_name}</span>
         </div>
-        <div className={style.description}>
+        <div className={style.description} data-testid="reserved">
           {rocket.reserved && <span className={style.badge}>Reserved</span>}
           {!rocket.reserved && ''}
           <span>{rocket.description}</span>
         </div>
-        <button type="submit" className={`${rocket.reserved && style.reserved} ${!rocket.reserved && style.notReserved}`} onClick={() => dispatch(rocketReserve(rocket.rocket_id))}>
+        <button data-testid="button" type="submit" className={`${rocket.reserved && style.reserved} ${!rocket.reserved && style.notReserved}`} onClick={() => dispatch(rocketReserve(rocket.rocket_id))}>
           {rocket.reserved && 'Cancel Reservation'}
           {!rocket.reserved && 'Reserve Rocket'}
 

@@ -16,6 +16,7 @@ Object {
         />
         <td
           class="missionStatus"
+          data-testid="status"
         >
           <span
             class="badgePassive"
@@ -28,6 +29,7 @@ Object {
         >
           <button
             class="missionBtn undefined badgeJoin"
+            data-testid="join"
             id="lundefined"
             type="button"
           >
@@ -49,6 +51,7 @@ Object {
       />
       <td
         class="missionStatus"
+        data-testid="status"
       >
         <span
           class="badgePassive"
@@ -61,6 +64,7 @@ Object {
       >
         <button
           class="missionBtn undefined badgeJoin"
+          data-testid="join"
           id="lundefined"
           type="button"
         >
