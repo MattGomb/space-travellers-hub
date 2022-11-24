@@ -11,7 +11,6 @@ const Rocket = (props) => {
       <div className={style.flickr}>
         <img src={rocket.flickr_images[0]} alt={rocket.rocket_name} />
       </div>
-
       <div className={style.content}>
         <div>
           <span className={style.rocketName}>{rocket.rocket_name}</span>
@@ -24,7 +23,6 @@ const Rocket = (props) => {
         <button data-testid="button" type="submit" className={`${rocket.reserved && style.reserved} ${!rocket.reserved && style.notReserved}`} onClick={() => dispatch(rocketReserve(rocket.rocket_id))}>
           {rocket.reserved && 'Cancel Reservation'}
           {!rocket.reserved && 'Reserve Rocket'}
-
         </button>
       </div>
     </div>

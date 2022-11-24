@@ -20,7 +20,7 @@ describe('mission page', () => {
   it('should update mission member status', () => {
     const button = screen.getByTestId('button');
     const status = screen.getByTestId('reserved');
-    userEvent.click(joinButton);
+    userEvent.click(button);
     expect(status).toHaveTextContent('reserved');
   });
 });
