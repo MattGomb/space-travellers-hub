@@ -25,7 +25,7 @@ const Rocket = (props) => {
         <div>
           <span className={style.rocketName}>{name}</span>
         </div>
-        <div className={style.description} data-testid="reserved">
+        <div className={style.description}>
           {reserved && (
             <span className={style.badge}>Reserved</span>
           )}
