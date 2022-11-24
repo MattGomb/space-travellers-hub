@@ -75,14 +75,7 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://redux.js.org/">Redux</a></li>
   </ul>
 </details>
 
@@ -90,11 +83,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **You can reserve rockets, and undo the reservation**
+- **You can join missions and leave them**
+- **You can check all reservations and joined missions on the myProfile page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,9 +93,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [No live demo yet](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,83 +101,123 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+## Getting Started with Create React App
 
-To get a local copy up and running, follow these steps.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Prerequisites
+### Available Scripts
 
-In order to run this project you need:
+In the project directory, you can run:
 
-<!--
-Example command:
+### `npm start`
 
-```sh
- gem install rails
-```
- -->
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Setup
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Clone this repository to your desired folder:
+### `npm test`
 
-<!--
-Example commands:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
+### `npm run build`
 
-### Install
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Install this project with:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-<!--
-Example command:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```sh
-  cd my-project
-  gem install
-```
---->
+### `npm run eject`
 
-### Usage
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-To run the project, execute the following command:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-<!--
-Example command:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-```sh
-  rails server
-```
---->
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### Run tests
+## Learn More
 
-To run tests, run the following command:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-<!--
-Example command:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
-You can deploy this project using:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-<!--
-Example:
+### `npm run build` fails to minify
 
-```sh
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-```
- -->
+
+### Prerequisites
+
+- Installation of Node.js, Node Package Manager, webpack module bundler, and Babel 
+- Functioning computer Internet connection 
+- Basic understanding of Git and GitHub
+- Basic JavaScript, HTML, and CSS knowledge
+
+### Setup
+
+To get a local copy up and running follow these simple example steps:
+
+1 - Above the list of files, click on the "Code" button
+
+2 - Copy the URL for the repository.
+
+3 - To clone the repository using HTTPS, under "HTTPS", click . To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click SSH, then click . To clone a repository using GitHub CLI, click GitHub CLI, then click . The clipboard icon for copying the URL to clone a repository with GitHub CLI
+
+4 - Open Git Bash.
+
+5 - Change the current working directory to the location where you want the cloned directory.
+
+6 - Type git clone, and then paste the URL you copied earlier.
+
+7 - Press Enter to create your local clone.
+
+8 - To get started with the exact same setup, don't forget to install webpack, babel, and jest on your computer!
+
+- [The setup of webpack](https://webpack.js.org/guides/getting-started/)
+- [The setup of jest](https://jest-bot.github.io/jest/docs/getting-started.html)
+- [The setup of babel](https://babeljs.io/setup)
+
+Please read the documentation to get familiar with each of them!
+
+### Install
+
+- A code editor (e.g. VSC) /text editor (e.g. notepad++) Node.js
+
+### Usage
+
+Feel free to use this repo to play around with basic HTML, CSS, and JavaScript elements and solutions
+
+### Run tests
+
+No testing required, but you can always take a look at the jest testing environment and create new tests for functions.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -198,29 +227,17 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Marcos Gualtero Lourenzo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
+- GitHub: [@Goruchie](https://github.com/Goruchie)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
+👤 **Mátyás Gombos**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- GitHub: [@MattGomb](https://github.com/MattGomb)
+- Twitter: [@MtysGombos1](https://twitter.com/MtysGombos1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/gombos-matyas/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -238,36 +255,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
-<a href="https://www.flaticon.com/free-icons/planet" title="planet icons">Planet icons created by Freepik - Flaticon</a>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+If you like this project, please give it a star!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -276,7 +264,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
