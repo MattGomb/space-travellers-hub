@@ -62,7 +62,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Click me for demo!](spacetrvlrs-marcos-matt.netlify.app)
+- [Click me for demo!](https://spacetrvlrs-marcos-matt.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
